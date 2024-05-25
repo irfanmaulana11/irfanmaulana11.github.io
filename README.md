@@ -1,6 +1,6 @@
 # M. Irfan Maulana
 
-Hello :wave: ! I'm a backend engineer with experience in Golang, .NET, PHP (Laravel). This repository serves as a portfolio to showcase my projects and professional experience. Feel free to explore and reach out if you have any questions or collaboration ideas :sweat_smile::metal:.
+Hello! 👋 I'm a backend engineer with experience in Golang, .NET, PHP (Laravel). This repository serves as a portfolio to showcase my projects and professional experience. Feel free to explore and reach out if you have any questions or collaboration ideas 😅🤘.
 
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
@@ -20,21 +20,68 @@ Hello :wave: ! I'm a backend engineer with experience in Golang, .NET, PHP (Lara
 
 
 ## Professional Experience
-| Company | Year | Role |
-|----------|----------|----------|
-| Edudund    | Nov 2023 - Present   | Backend Engineer  |
-| Mister Aladin (MNC Group)    | May 2022 - Nov 2023   | Backend Engineer   |
-| Blue Bird Group    | Aug 2020 - May 2022   | Backend Engineer   |
-| Blue Bird Group    | May 2018 - Jun 2020   | IT Helpdesk   |
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Year</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Edudund</td>
+    <td>Nov 2023 - Present</td>
+    <td>Backend Engineer</td>
+  </tr>
+  <tr>
+    <td>Mister Aladin (MNC Group)</td>
+    <td>May 2022 - Nov 2023</td>
+    <td>Backend Engineer</td>
+  </tr>
+  <tr>
+    <td>Blue Bird Group</td>
+    <td>Aug 2020 - May 2022</td>
+    <td>Backend Engineer</td>
+  </tr>
+  <tr>
+    <td>Blue Bird Group</td>
+    <td>May 2018 - Jun 2020</td>
+    <td>IT Helpdesk</td>
+  </tr>
+</table>
 
 ## Other Projects
-| Project | Role | Tecnology
-|----------|----------|----------|
-| Pandawara Group (compro, cms, payment system)    | Backend   | GO, Gin, MySQL, Rest API
-| Bijak Gadai Dashboard   | Fullstack   | PHP Laravel, Mysql
-| IKD Company Profile   | Fullstack   | CodeIgneter, Mysql
-| Hijab's Ecommerce  | Fullstack   | Wordpress, Woocommerse, Mysql
-| Pojok Konveksi - Compro  | Fullstack   | Wordpress, Mysql
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Role</th>
+    <th>Technology</th>
+  </tr>
+  <tr>
+    <td>Pandawara Group (compro, cms, payment system)</td>
+    <td>Backend</td>
+    <td>GO, Gin, MySQL, Rest API</td>
+  </tr>
+  <tr>
+    <td>Bijak Gadai Dashboard</td>
+    <td>Fullstack</td>
+    <td>PHP Laravel, MySQL</td>
+  </tr>
+  <tr>
+    <td>IKD Company Profile</td>
+    <td>Fullstack</td>
+    <td>CodeIgniter, MySQL</td>
+  </tr>
+  <tr>
+    <td>Hijab's Ecommerce</td>
+    <td>Fullstack</td>
+    <td>WordPress, WooCommerce, MySQL</td>
+  </tr>
+  <tr>
+    <td>Pojok Konveksi - Compro</td>
+    <td>Fullstack</td>
+    <td>WordPress, MySQL</td>
+  </tr>
+</table>
+
 
 ## Contact
 
