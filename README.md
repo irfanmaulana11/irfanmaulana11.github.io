@@ -18,8 +18,8 @@ Hello! 👋 I'm a backend engineer with experience in Golang, .NET, PHP (Laravel
 
 
 ## Professional Experience
-<table>
-  <tr>
+<table style="border: 1px solid black; border-collapse: collapse;">
+  <tr style="background-color: #33a63b;">
     <th>Company</th>
     <th>Year</th>
     <th>Role</th>
@@ -47,8 +47,8 @@ Hello! 👋 I'm a backend engineer with experience in Golang, .NET, PHP (Laravel
 </table>
 
 ## Other Projects
-<table>
-  <tr>
+<table style="border: 1px solid black; border-collapse: collapse;">
+  <tr style="background-color: #33a63b;">
     <th>Project</th>
     <th>Role</th>
     <th>Technology</th>
