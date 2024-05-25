@@ -27,7 +27,7 @@ Hello! 👋 I'm a backend engineer with experience in Golang, .NET, PHP (Laravel
     <th>Role</th>
   </tr>
   <tr>
-    <td>Edudund</td>
+    <td>Edufund</td>
     <td>Nov 2023 - Present</td>
     <td>Backend Engineer</td>
   </tr>
