@@ -1,5 +1,3 @@
-# M. Irfan Maulana
-
 Hello! 👋 I'm a backend engineer with experience in Golang, .NET, PHP (Laravel). This repository serves as a portfolio to showcase my projects and professional experience. Feel free to explore and reach out if you have any questions or collaboration ideas 😅🤘.
 
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
