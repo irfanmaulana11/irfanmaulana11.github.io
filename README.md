@@ -87,4 +87,4 @@ Feel free to reach out to me on [LinkedIn](https://linkedin.com/in/irfanmaulana1
 
 ---
 
-Thank you for visiting my portfolio. I look forward to connecting with you!
+Thank you for visiting my portfolio. I look forward to connecting with you! 🚀🚀🚀
