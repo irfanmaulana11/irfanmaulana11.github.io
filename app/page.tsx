@@ -25,8 +25,8 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row items-center gap-12 mb-8">
             <div className="flex-shrink-0">
               <div className="w-60 h-60">
-                <img 
-                  src="/profile.png" 
+                <img
+                  src="/profile.png"
                   alt="Irfan Maulana"
                 />
               </div>
@@ -41,16 +41,16 @@ export default function Portfolio() {
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
                 5+ YOE. I build scalable backend systems and APIs. With expertise in Golang, .NET, and PHP. I deliver robust solutions for complex problems. Passionate about clean code, microservices, and system design.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex gap-6 items-center">
-                <a href="https://linkedin.com/in/irfanmaulana11" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://linkedin.com/in/irfanmaulana11" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-125">
                   <Linkedin size={24} />
                 </a>
-                <a href="https://github.com/irfanmaulana11" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://github.com/irfanmaulana11" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-125">
                   <Github size={24} />
                 </a>
-                <a href="mailto:ipann1297@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="mailto:ipann1297@gmail.com" className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-125">
                   <Mail size={24} />
                 </a>
               </div>
@@ -61,8 +61,8 @@ export default function Portfolio() {
           <div className="mt-12 pt-12 border-t border-border">
             <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider">Technology Stack</p>
             <div className="flex flex-wrap gap-3">
-              {['Golang', 'Gin', 'Echo', 'Gorilla Mux', '.NET', 'ASP.NET', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'RabbitMQ', 'gRPC', 'REST API', 'Bigquery' , 'Docker'].map((tech) => (
-                <span key={tech} className="px-4 py-2 bg-card border border-border rounded-lg text-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all cursor-default">
+              {['Golang', 'Gin', 'Echo', 'Gorilla Mux', '.NET', 'ASP.NET', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'RabbitMQ', 'gRPC', 'REST API', 'Bigquery', 'Docker'].map((tech) => (
+                <span key={tech} className="px-4 py-2 bg-card border border-border rounded-lg text-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 cursor-default">
                   {tech}
                 </span>
               ))}
@@ -154,7 +154,7 @@ export default function Portfolio() {
                 description: 'Technical support and IT infrastructure management'
               }
             ].map((exp, idx) => (
-              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all shadow-lg">
+              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="flex flex-col gap-2 mb-4">
                   <h3 className="text-lg font-semibold text-foreground">{exp.role}</h3>
                   <p className="text-primary font-medium text-sm">{exp.company}</p>
@@ -202,7 +202,7 @@ export default function Portfolio() {
                 tech: ['WordPress', 'WooCommerce', 'MySQL']
               }
             ].map((project, idx) => (
-              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:border-primary transition-colors group shadow-lg">
+              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 hover:scale-105 group shadow-lg">
                 <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{project.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
                 <div className="mb-4">
@@ -230,20 +230,20 @@ export default function Portfolio() {
           <p className="text-lg text-muted-foreground mb-12">
             Interested in collaborating or have a project in mind? Feel free to reach out. I'm always open to discussing new ideas and opportunities.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="mailto:ipann1297@gmail.com"
-              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
             >
               <Mail size={20} />
               Send Email
             </a>
-            <a 
+            <a
               href="https://linkedin.com/in/irfanmaulana11"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-card border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center gap-2"
+              className="px-8 py-3 bg-card border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
             >
               <Linkedin size={20} />
               LinkedIn
@@ -258,9 +258,9 @@ export default function Portfolio() {
 
       {/* Scroll to top button */}
       <div className="fixed bottom-8 right-8">
-        <button 
+        <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="p-3 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl"
+          className="p-3 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl"
           aria-label="Scroll to top"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
