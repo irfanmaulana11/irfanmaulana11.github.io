@@ -24,11 +24,10 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12 mb-8">
             <div className="flex-shrink-0">
-              <div className="w-48 h-48 rounded-full overflow-hidden ring-4 ring-primary shadow-lg">
+              <div className="w-60 h-60">
                 <img 
-                  src="/profile.jpg" 
+                  src="/profile.png" 
                   alt="Irfan Maulana"
-                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
