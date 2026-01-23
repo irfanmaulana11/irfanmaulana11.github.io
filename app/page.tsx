@@ -22,28 +22,28 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="about" className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-12 mb-8">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-8">
             <div className="flex-shrink-0">
-              <div className="w-60 h-60">
+              <div className="w-48 h-48 md:w-60 md:h-60">
                 <img
                   src="/profile.png"
                   alt="Irfan Maulana"
                 />
               </div>
             </div>
-            <div className="flex-grow">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <div className="flex-grow text-center md:text-left w-full">
+              <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight whitespace-nowrap">
                 M. Irfan Maulana
               </h1>
-              <p className="text-2xl text-muted-foreground mb-8">
+              <p className="text-sm md:text-2xl text-muted-foreground mb-6 md:mb-8 md:whitespace-nowrap">
                 Backend Engineer • Golang • .NET • PHP
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
+              <p className="text-sm md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-6 md:mb-8 mx-auto md:mx-0">
                 5+ YOE. I build scalable backend systems and APIs. With expertise in Golang, .NET, and PHP. I deliver robust solutions for complex problems. Passionate about clean code, microservices, and system design.
               </p>
 
               {/* Social Links */}
-              <div className="flex gap-6 items-center">
+              <div className="flex gap-6 items-center justify-center md:justify-start">
                 <a href="https://linkedin.com/in/irfanmaulana11" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-125">
                   <Linkedin size={24} />
                 </a>
@@ -61,8 +61,8 @@ export default function Portfolio() {
           <div className="mt-12 pt-12 border-t border-border">
             <p className="text-sm text-muted-foreground mb-6 uppercase tracking-wider">Technology Stack</p>
             <div className="flex flex-wrap gap-3">
-              {['Golang', 'Gin', 'Echo', 'Gorilla Mux', '.NET', 'ASP.NET', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'RabbitMQ', 'gRPC', 'REST API', 'Bigquery', 'Docker'].map((tech) => (
-                <span key={tech} className="px-4 py-2 bg-card border border-border rounded-lg text-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 cursor-default">
+              {['Golang', 'Gin', 'Echo', 'Gorilla Mux', '.NET', 'ASP.NET', 'PHP', 'Laravel', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'RabbitMQ', 'gRPC', 'REST API', 'Bigquery', 'Docker'].map((tech, index) => (
+                <span key={tech} className={`px-3 md:px-4 py-2 bg-card border border-border rounded-lg text-xs md:text-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 cursor-default ${index >= 10 ? 'hidden md:inline-block' : ''}`}>
                   {tech}
                 </span>
               ))}
@@ -76,7 +76,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
             <Code2 size={28} className="text-primary" />
-            <h2 className="text-3xl font-bold">Skills & Expertise</h2>
+            <h2 className="text-2xl md:text-3xl font-bold whitespace-nowrap">Skills & Expertise</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -123,8 +123,8 @@ export default function Portfolio() {
       <section id="experience" className="py-20 px-6 bg-card/50">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
-            <Briefcase size={28} className="text-primary" />
-            <h2 className="text-3xl font-bold">Professional Experience</h2>
+            <Briefcase size={28} className="text-primary flex-shrink-0" />
+            <h2 className="text-xl md:text-3xl font-bold">Professional Experience</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -172,7 +172,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
             <FolderOpen size={28} className="text-primary" />
-            <h2 className="text-3xl font-bold">Notable Projects</h2>
+            <h2 className="text-2xl md:text-3xl font-bold whitespace-nowrap">Notable Projects</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
