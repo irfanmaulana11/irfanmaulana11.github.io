@@ -8,7 +8,7 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-xl font-bold text-primary">IM</div>
+          <img src="/logo.webp" alt="Logo" className="h-8" />
           <div className="hidden md:flex gap-8 text-sm">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
@@ -26,7 +26,7 @@ export default function Portfolio() {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 md:w-60 md:h-60">
                 <img
-                  src="/profile.png"
+                  src="/profile.webp"
                   alt="Irfan Maulana"
                 />
               </div>
