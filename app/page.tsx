@@ -1,20 +1,40 @@
 'use client';
 
-import { ExternalLink, Github, Linkedin, Mail, Code2, Briefcase, FolderOpen } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { ExternalLink, Github, Linkedin, Mail, Code2, Briefcase, FolderOpen, Moon, Sun } from 'lucide-react'
 
 export default function Portfolio() {
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [isDark])
+
   return (
     <div className="bg-background min-h-screen text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 border-b border-border">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <img src="/logo.webp" alt="Logo" className="h-8" />
-          <div className="hidden md:flex gap-8 text-sm">
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
-            <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
-            <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+          <div className="flex items-center gap-6">
+            <div className="hidden md:flex gap-8 text-sm">
+              <a href="#about" className="hover:text-primary transition-colors">About</a>
+              <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+              <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
+              <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+              <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 rounded-lg hover:bg-card transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
           </div>
         </div>
       </nav>
@@ -26,7 +46,7 @@ export default function Portfolio() {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 md:w-60 md:h-60">
                 <img
-                  src="/profile.webp"
+                  src={isDark ? "/profile-dark.webp" : "/profile.webp"}
                   alt="Irfan Maulana"
                 />
               </div>
@@ -36,7 +56,7 @@ export default function Portfolio() {
                 M. Irfan Maulana
               </h1>
               <p className="text-sm md:text-2xl text-muted-foreground mb-6 md:mb-8 md:whitespace-nowrap">
-                Backend Engineer • Golang • .NET • PHP
+                <span className="text-primary">Backend Engineer</span> • Golang • .NET • PHP
               </p>
               <p className="text-sm md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-6 md:mb-8 mx-auto md:mx-0">
                 5+ YOE. I build scalable backend systems and APIs. With expertise in Golang, .NET, and PHP. I deliver robust solutions for complex problems. Passionate about clean code, microservices, and system design.
@@ -111,7 +131,7 @@ export default function Portfolio() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-accent mt-1">•</span>
-                  <span><strong className="text-foreground">Other</strong> - gRPC, Elasticsearch, Redis, Unit Testing</span>
+                  <span><strong className="text-foreground">Other</strong> - gRPC, Elasticsearch, Redis, Unit Testing, Docker</span>
                 </li>
               </ul>
             </div>
@@ -133,25 +153,44 @@ export default function Portfolio() {
                 company: 'Edufund',
                 period: 'Nov 2023 - Present',
                 role: 'Backend Engineer',
-                description: 'Building and maintaining backend systems for fintech platform'
+                description: [
+                  'Developed and maintained REST API–based backend services and cron jobs.',
+                  'Implemented data pipelines with DBT for analytics, reporting, and transactional workflows.',
+                  'Develop web application using Appsmith.',
+                  'Authored and maintained technical documentation using Docusaurus.',
+                  '<strong>Tech stack:</strong> Golang, MySQL, PostgreSQL, NSQ, GraphQL, Metabase, SFTP, DBT, n8n, Appsmith, Docker.'
+                ]
               },
               {
                 company: 'Mister Aladin (MNC Group)',
                 period: 'May 2022 - Nov 2023',
                 role: 'Backend Engineer',
-                description: 'Developed microservices and APIs for enterprise e-commerce platform'
+                description: [
+                  'Developing REST API for mobile and web consumption.',
+                  'Develop ticketing system.',
+                  'Integrate with external service like payment gateway and other OTA.',
+                  '<strong>Tech stack:</strong> Golang, MySql, Algolia, MongoDB'
+                ]
               },
               {
                 company: 'Blue Bird Group',
                 period: 'Aug 2020 - May 2022',
                 role: 'Backend Engineer',
-                description: 'Engineered transport management systems and integrations'
+                description: [
+                  'Developed Go gRPC microservices and REST API for system along with unit testing.',
+                  'Maintained .NET desktop and ASP .NET web applications.',
+                  '<strong>Tech stack:</strong> Golang, gRPC, PostgreSQL, RabbitMQ, Elasticsearch, Redis, Google Pub/Sub, ASP .NET MVC, SQL Server, IIS.'
+                ]
               },
               {
                 company: 'Blue Bird Group',
                 period: 'May 2018 - Jun 2020',
                 role: 'IT Helpdesk',
-                description: 'Technical support and IT infrastructure management'
+                description: [
+                  'Create a ticket for the incoming system problem report',
+                  'First Hendling on Computer issue',
+                  'Ensure all daily transaction reports are entered into the system'
+                ]
               }
             ].map((exp, idx) => (
               <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all duration-300 hover:scale-105 shadow-lg">
@@ -160,7 +199,14 @@ export default function Portfolio() {
                   <p className="text-primary font-medium text-sm">{exp.company}</p>
                   <span className="text-xs text-muted-foreground">{exp.period}</span>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
+                <ul className="text-sm text-muted-foreground leading-relaxed space-y-2">
+                  {exp.description.map((desc, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span dangerouslySetInnerHTML={{ __html: desc }} />
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -179,7 +225,7 @@ export default function Portfolio() {
             {[
               {
                 name: 'Pandawara Group',
-                description: 'Company profile, CMS, and payment system',
+                description: 'Company profile, CMS, HR system and payment system',
                 role: 'Backend',
                 tech: ['GO', 'Gin', 'MySQL', 'REST API']
               },
