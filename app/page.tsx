@@ -193,7 +193,7 @@ export default function Portfolio() {
                 ]
               }
             ].map((exp, idx) => (
-              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all duration-300 hover:scale-105 shadow-lg">
+              <div key={idx} className="bg-background border border-border rounded-2xl p-6 hover:shadow-md hover:border-primary transition-all duration-300 hover:scale-105 shadow-lg">
                 <div className="flex flex-col gap-2 mb-4">
                   <h3 className="text-lg font-semibold text-foreground">{exp.role}</h3>
                   <p className="text-primary font-medium text-sm">{exp.company}</p>
@@ -248,7 +248,7 @@ export default function Portfolio() {
                 tech: ['WordPress', 'WooCommerce', 'MySQL']
               }
             ].map((project, idx) => (
-              <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:border-primary transition-all duration-300 hover:scale-105 group shadow-lg">
+              <div key={idx} className="bg-background border border-border rounded-2xl p-6 hover:border-primary transition-all duration-300 hover:scale-105 group shadow-lg">
                 <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{project.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
                 <div className="mb-4">
